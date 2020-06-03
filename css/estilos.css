@@ -4,16 +4,23 @@ body {
 }
 
 .title {
-    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 118px;
 }
 
 section {
     height: 257px;
     display: flex;
     justify-content: center;
+    display: grid !important;
 }
 
 .form {
     background: #9ac7ff;
     width: 500px;
+}
+
+#logo img {
+    width: 5%;
 }

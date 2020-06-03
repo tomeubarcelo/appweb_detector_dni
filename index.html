@@ -40,7 +40,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="_assets/img/desktop/icon.png">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
@@ -57,7 +57,7 @@
              * Bloque LOGO
              *
             -->
-            <img src="" alt="">
+            <img src="_assets/img/desktop/icon.png" alt="Logo policia">
         </figure>
 
         <nav id="navegacionPrincipal">
@@ -66,6 +66,7 @@
              * Bloque Links de Navegación Principal
              *
             -->
+            <h1 class="title">AppWeb - Policía</h1>
         </nav>
 
     </header>
@@ -76,7 +77,7 @@
         * Bloque MAIN
         *
       -->
-        <h1 class="title">Detector de DNI falsos</h1>
+        <!--<h1 class="title">Detector de DNI falsos</h1>-->
 
         <section>
             <!--
@@ -85,6 +86,24 @@
              *
             -->
             <div class="form">
+                <div class="w3-container w3-blue">
+                    <h2>Detector de DNI falsos</h2>
+                </div>
+
+                <form class="w3-container">
+                    <p>
+                        <label>Nombre</label>
+                        <input class="w3-input" type="text"></p>
+                    <p>
+                        <label>Apellidos</label>
+                        <input class="w3-input" type="text"></p>
+                    <p>
+                        <label>DNI</label>
+                        <input class="w3-input" type="text" placeholder="00000000A" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra"></p>
+                    <p>
+                        <input class="w3-input" type="submit" value="Comprobar DNI">
+                    </p>
+                </form>
 
             </div>
         </section>
