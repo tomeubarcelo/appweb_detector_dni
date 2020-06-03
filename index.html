@@ -40,7 +40,12 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="_assets/img/desktop/icon.png">
+
+    <!-- css form-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Nuestro js -->
+    <script src="js/dni_validator.js"></script>
 
 </head>
 
@@ -99,9 +104,9 @@
                         <input class="w3-input" type="text"></p>
                     <p>
                         <label>DNI</label>
-                        <input class="w3-input" type="text" placeholder="00000000A" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra"></p>
+                        <input class="w3-input" type="text" placeholder="00000000A" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra"></p>
                     <p>
-                        <input class="w3-input" type="submit" value="Comprobar DNI">
+                        <input class="w3-input" type="submit" onclick="validaDNI()" value="Comprobar DNI">
                     </p>
                 </form>
 
