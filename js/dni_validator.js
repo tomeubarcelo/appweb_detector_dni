@@ -3,10 +3,10 @@ const letterDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', '
 function validaDNI() {
     console.log('click en comprobar dni');
     var dni = document.getElementsByName("dni")[0].value;
-    alert(dni);
+    console.log(dni);
 
     var dniSoloNum = dni.slice(0, 8); //eliminamos la letra introducida
-    alert(dniSoloNum);
+    console.log(dniSoloNum);
 
     var result = dniSoloNum % 23; //calculamos el resto del dni introducido entre 23 (num de letras)
     console.log('El resultado de ' + dniSoloNum + ' % 23 es: ' + result);
@@ -27,6 +27,7 @@ function validaDNI() {
     if (dni === dniAndLetter) {
         console.log('Es correcto');
         document.getElementById("resultFormDni").innerHTML = dniAndLetter + " es correcto";
+        document.getElementById("resultFormDni").style.color = "green";
     } else {
         console.log('Es incorrecto');
         document.getElementById("resultFormDni").innerHTML = dniAndLetter + " es incorrecto!";
