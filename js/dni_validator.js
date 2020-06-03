@@ -1,3 +1,14 @@
+/*  ********************************
+ * @title Ejercicio validador DNI
+ * @version 0.0.1
+ * @author Tomeu Barceló
+ ******************************** */
+
+/*
+Crear una AppWeb, para la policía.
+Tiene que detectar al poner el nombre y el dni, si esa persona nos ha dado un dni erróneo.
+ */
+
 const letterDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
 function validaDNI() {
