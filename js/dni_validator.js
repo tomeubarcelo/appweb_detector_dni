@@ -18,10 +18,19 @@ function validaDNI() {
     var dniAndLetter = dniSoloNum + letraSeleccionada;
     console.log(dniAndLetter);
 
+
+    //mostrar datos pantalla
+    var nombre = document.getElementsByName("nombre")[0].value;
+    var apellidos = document.getElementsByName("apellidos")[0].value;
+    document.getElementById("resultNameConApellidos").innerHTML = nombre + " " + apellidos;
+
     if (dni === dniAndLetter) {
-        alert('es correcto')
+        console.log('Es correcto');
+        document.getElementById("resultFormDni").innerHTML = dniAndLetter + " es correcto";
     } else {
-        alert('tu dni es incorrecto');
+        console.log('Es incorrecto');
+        document.getElementById("resultFormDni").innerHTML = dniAndLetter + " es incorrecto!";
+        document.getElementById("resultFormDni").style.color = "red";
     }
 
 };

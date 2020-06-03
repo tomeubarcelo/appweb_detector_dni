@@ -98,27 +98,32 @@
                 <form class="w3-container">
                     <p>
                         <label>Nombre</label>
-                        <input class="w3-input" type="text"></p>
+                        <input class="w3-input" type="text" name="nombre"></p>
                     <p>
                         <label>Apellidos</label>
-                        <input class="w3-input" type="text"></p>
+                        <input class="w3-input" type="text" name="apellidos"></p>
                     <p>
                         <label>DNI</label>
                         <input class="w3-input" type="text" placeholder="00000000A" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra"></p>
                     <p>
-                        <input class="w3-input" type="submit" onclick="validaDNI()" value="Comprobar DNI">
+                        <input class="w3-input" type="button" onclick="validaDNI()" value="Comprobar DNI">
                     </p>
                 </form>
 
             </div>
         </section>
-
+        <br>
         <article>
             <!--
              *
              * Bloque ARTICLE
              *
             -->
+            <div class="resultBox">
+                <p id="resultNameConApellidos"></p>
+                <p id="resultFormDni"></p>
+            </div>
+
         </article>
 
     </main>
