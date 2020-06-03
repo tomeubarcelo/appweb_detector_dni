@@ -98,13 +98,13 @@
                 <form class="w3-container">
                     <p>
                         <label>Nombre</label>
-                        <input class="w3-input" type="text" name="nombre"></p>
+                        <input class="w3-input" type="text" name="nombre" required></p>
                     <p>
                         <label>Apellidos</label>
-                        <input class="w3-input" type="text" name="apellidos"></p>
+                        <input class="w3-input" type="text" name="apellidos" required></p>
                     <p>
                         <label>DNI</label>
-                        <input class="w3-input" type="text" placeholder="00000000A" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra"></p>
+                        <input class="w3-input" type="text" placeholder="00000000A" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra mayuscula" required></p>
                     <p>
                         <input class="w3-input" type="button" onclick="validaDNI()" value="Comprobar DNI">
                     </p>

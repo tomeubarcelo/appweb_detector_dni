@@ -5,9 +5,14 @@ function validaDNI() {
     var dni = document.getElementsByName("dni")[0].value; //valor del input 
     console.log("DNI introducido: " + dni);
 
+    var dniLetter = dni.slice(8); //letra introducida
+    var dniLetterMayuscula = dniLetter.toUpperCase(); //letra en mayusculas
+    console.log("Letra del dni: " + dniLetter);
     console.log("Longitud dni: " + dni.length);
-    if (dni.length != 9) { //si la longitud del dni es diferete de 9 
-        alert("Debe poner 8 números y una letra");
+
+    //si la longitud del dni es diferente de 9 o la letra no es mayuscula
+    if (dni.length != 9 || dniLetter != dniLetterMayuscula) {
+        alert("Debe poner 8 números y una letra mayuscula");
         document.getElementById("resultNameConApellidos").innerHTML = "";
         document.getElementById("resultFormDni").innerHTML = "";
         document.getElementById("resultFormDniQueTocaria").innerHTML = "";
